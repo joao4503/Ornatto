@@ -2,7 +2,7 @@
 
 - `tabela-precos.html`: arquivo-fonte (edite textos, preços e cores aqui; as cores ficam em `:root`).
 - `gerar-pdf.js`: gera `output/TabelaPrecos_Ornatto.pdf` (A4) e a prévia `output/TabelaPrecos_Ornatto.png`.
-- `assets/`: logo (extraído do PDF original) e QR code do Instagram.
+- `assets/`: logos oficiais em vetor (`logo-ornatto-color.svg` no cabeçalho, `logo-ornatto-verde.svg` para fundos claros) e QR code do Instagram.
 - `fonts/`: DM Serif Display, Source Serif 4, Instrument Sans e Oswald (licença SIL OFL).
 
 ## Gerar o PDF
