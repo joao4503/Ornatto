@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Programação Instagram · Ornatto</title>
+<style>
+@font-face { font-family: "Playfair"; src: url("fonts/PlayfairDisplay-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Playfair"; src: url("fonts/PlayfairDisplay-SemiBoldItalic.ttf"); font-weight: 600; font-style: italic; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-Medium.ttf"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-SemiBold.ttf"); font-weight: 600; }
+:root { --verde:#1C2719; --verde2:#253422; --creme:#F4F1EA; --dourado:#B98543; --salvia:#6F8266; --bege:#D6C9B8; }
+@page { size: A4 landscape; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--creme); }
+body { font: 9pt/1.4 "Inter"; color: var(--verde); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1, h2, b.n { font-variant-numeric: lining-nums; }
+.pagina { width: 297mm; height: 210mm; padding: 11mm 13mm 9mm; position: relative; page-break-after: always; overflow: hidden; }
+.pagina:last-child { page-break-after: auto; }
+header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1.2pt solid var(--dourado); padding-bottom: 3mm; margin-bottom: 4mm; }
+header img { height: 13mm; }
+h1 { font: 700 21pt/1 "Playfair"; }
+h1 em { font: 600 italic 21pt "Playfair"; color: var(--dourado); }
+.sub { color: var(--salvia); margin-top: 1.5mm; font-size: 9pt; }
+h2 { font: 700 12pt "Playfair"; margin: 0 0 1.8mm; display: flex; gap: 3mm; align-items: baseline; }
+h2 span { font: 500 8.5pt "Inter"; color: var(--salvia); }
+table { width: 100%; border-collapse: collapse; margin-bottom: 4.5mm; table-layout: fixed; }
+th { font: 600 8pt "Inter"; color: var(--salvia); text-align: left; padding: 1.2mm 2mm; border-bottom: .8pt solid var(--verde); }
+td { padding: 1.25mm 2mm; border-bottom: .5pt solid var(--bege); vertical-align: top; font-size: 9.4pt; }
+td.dia { font-weight: 600; white-space: nowrap; } td.hora { color: var(--salvia); white-space: nowrap; }
+.tag { display: inline-block; font: 600 7.6pt "Inter"; padding: .4mm 2mm; border-radius: 3mm; white-space: nowrap; }
+.car { background: var(--verde2); color: var(--creme); }
+.reel { background: var(--dourado); color: var(--verde); }
+.sto { border: .7pt solid var(--salvia); color: var(--salvia); }
+.live { background: #8a1f1f; color: #fff; }
+.star { color: var(--dourado); font-weight: 700; }
+.ok { color: var(--salvia); font-weight: 600; }
+.pend { color: #a33; font-weight: 600; }
+tr.dest td { background: #efe8da; }
+.col { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; }
+.box { background: #fff; border: .7pt solid var(--bege); border-radius: 2mm; padding: 4mm 5mm; }
+.box h3 { font: 700 11pt "Playfair"; margin-bottom: 2mm; }
+.box ul { padding-left: 4mm; } .box li { margin-bottom: 1.2mm; }
+.rodape { position: absolute; left: 13mm; right: 13mm; bottom: 6mm; display: flex; justify-content: space-between; color: var(--salvia); font-size: 8pt; }
+</style>
+</head>
+<body>
+
+<!-- ================= PÁGINA 1 ================= -->
+<section class="pagina">
+  <header>
+    <div><h1>Programação do Instagram · <em>30/11 a 27/12</em></h1>
+    <p class="sub">@ornattocafes · 13 carrosséis, 10 reels, 1 sorteio ao vivo e stories todos os dias · horários sugeridos para teste</p></div>
+    <img src="assets/logotipo-verde-dourado.svg">
+  </header>
+
+  <div>
+    <h2>Semana 1 <span>Natal e lançamento do sorteio</span></h2>
+    <table>
+      <colgroup><col style="width:16mm"><col style="width:11mm"><col style="width:24mm"><col><col style="width:30mm"></colgroup>
+      <tr><th>Dia</th><th>Hora</th><th>Formato</th><th>Tema · gancho</th><th>Status</th></tr>
+      <tr><td class="dia">Seg 30</td><td class="hora">12h</td><td><span class="tag car">Carrossel</span></td><td>Presente de Natal · "O presente de quem sabe a diferença"</td><td class="pend">Fotos das latas</td></tr>
+      <tr><td class="dia">Ter 01</td><td class="hora">19h</td><td><span class="tag reel">Reel</span> <span class="star">★</span></td><td>A máquina que expulsa o grão ruim · "Esse grão foi reprovado em milésimos de segundo."</td><td class="pend">Gravar 27/11</td></tr>
+      <tr class="dest"><td class="dia">Qua 02</td><td class="hora">12h</td><td><span class="tag car">Carrossel</span></td><td>Guia de presentes · "Qual café combina com quem você ama?"</td><td class="ok">Pronto</td></tr>
+      <tr class="dest"><td class="dia">Qua 02</td><td class="hora">19h</td><td><span class="tag car">Carrossel</span></td><td><b>Lançamento do sorteio</b> · "O kit do café campeão"</td><td class="pend">Foto do kit 02/12</td></tr>
+      <tr><td class="dia">Qui 03</td><td class="hora">12h</td><td><span class="tag reel">Reel</span> <span class="star">★</span></td><td>O barulho do provador · "Não, ele não está sem educação."</td><td class="pend">Gravar</td></tr>
+      <tr><td class="dia">Sex 04</td><td class="hora">12h</td><td><span class="tag car">Carrossel</span></td><td>Do cafezal à xícara · "6 etapas que ninguém vê antes da sua xícara"</td><td>A produzir</td></tr>
+      <tr><td class="dia">Sáb 05</td><td class="hora">19h</td><td><span class="tag reel">Reel</span> <span class="star">★</span></td><td>A saca de R$ 50 mil + sorteio · "Essa saca foi vendida por 50 mil reais."</td><td class="pend">Gravar</td></tr>
+      <tr><td class="dia">Dom 06</td><td class="hora"></td><td><span class="tag sto">Stories</span></td><td>Caixinha "Qual sua maior dúvida sobre café?"</td><td></td></tr>
+    </table>
+
+    <h2>Semana 2 <span>Origem, lotes e prazo dos kits</span></h2>
+    <table>
+      <colgroup><col style="width:16mm"><col style="width:11mm"><col style="width:24mm"><col><col style="width:30mm"></colgroup>
+      <tr><th>Dia</th><th>Hora</th><th>Formato</th><th>Tema · gancho</th><th>Status</th></tr>
+      <tr><td class="dia">Seg 07</td><td class="hora">19h</td><td><span class="tag car">Carrossel</span></td><td>Ficha sensorial · "O número que diz se seu café é especial"</td><td>A produzir</td></tr>
+      <tr><td class="dia">Ter 08</td><td class="hora">12h</td><td><span class="tag reel">Reel</span></td><td>Do grão à xícara · "Nem todo grão chega até aqui."</td><td class="ok">Pronto</td></tr>
+      <tr><td class="dia">Qua 09</td><td class="hora">12h</td><td><span class="tag car">Carrossel</span></td><td>Tropical da Chapada · "Esse café tem gosto de maracujá. Sério."</td><td>A produzir</td></tr>
+      <tr class="dest"><td class="dia">Qui 10</td><td class="hora">12h</td><td><span class="tag car">Carrossel</span></td><td><b>Última chamada dos kits</b> · "Hoje é o último dia"</td><td class="ok">Pronto</td></tr>
+      <tr><td class="dia">Qui 10</td><td class="hora">19h</td><td><span class="tag reel">Reel</span> <span class="star">★</span></td><td>Gosto de maracujá · "E ninguém colocou maracujá nele."</td><td class="pend">Gravar</td></tr>
+      <tr><td class="dia">Sex 11</td><td class="hora">19h</td><td><span class="tag car">Carrossel</span></td><td>Quem já está concorrendo · fotos dos participantes do sorteio</td><td>A produzir</td></tr>
+      <tr><td class="dia">Sáb 12</td><td class="hora">12h</td><td><span class="tag reel">Reel</span></td><td>3 erros com café em casa · "Você pode estar estragando um café especial."</td><td class="pend">Gravar</td></tr>
+      <tr><td class="dia">Dom 13</td><td class="hora"></td><td><span class="tag sto">Stories</span></td><td>Quiz "Acima de quantos pontos o café é especial?"</td><td></td></tr>
+    </table>
+  </div>
+  <div class="rodape"><span>★ maiores apostas de viralização · os reels terão dois ganchos para teste (A e B)</span><span>Ornatto Cafés Especiais · 1/3</span></div>
+</section>
+
+<section class="pagina">
+  <header>
+    <div><h1>Programação do Instagram · <em>30/11 a 27/12</em></h1>
+    <p class="sub">Semanas 3 e 4</p></div>
+    <img src="assets/logotipo-verde-dourado.svg">
+  </header>
+  <div>
+    <h2>Semana 3 <span>Cafeterias (rota do Alex de 14 a 18/12)</span></h2>
+    <table>
+      <colgroup><col style="width:16mm"><col style="width:11mm"><col style="width:24mm"><col><col style="width:30mm"></colgroup>
+      <tr><th>Dia</th><th>Hora</th><th>Formato</th><th>Tema · gancho</th><th>Status</th></tr>
+      <tr><td class="dia">Seg 14</td><td class="hora">12h</td><td><span class="tag car">Carrossel</span></td><td>Para cafeterias · "Sua cafeteria serve café ou serve história?"</td><td>A produzir</td></tr>
+      <tr><td class="dia">Ter 15</td><td class="hora">19h</td><td><span class="tag reel">Reel</span></td><td>Teste cego · "Dei dois cafés sem dizer qual era qual."</td><td class="pend">Gravar</td></tr>
+      <tr><td class="dia">Qua 16</td><td class="hora">19h</td><td><span class="tag car">Carrossel</span></td><td>Flor de Laranjeira · "90 pontos. Dá para sentir a flor."</td><td>A produzir</td></tr>
+      <tr><td class="dia">Qui 17</td><td class="hora">12h</td><td><span class="tag reel">Reel</span></td><td>Mito ou verdade · "Café bem escuro é mais forte?"</td><td class="pend">Gravar</td></tr>
+      <tr><td class="dia">Sex 18</td><td class="hora">12h</td><td><span class="tag car">Carrossel</span></td><td>Rebenefício · "4 máquinas que reprovam o seu café"</td><td>A produzir</td></tr>
+      <tr><td class="dia">Sáb 19</td><td class="hora">19h</td><td><span class="tag reel">Reel</span></td><td>O som da torra · "Esse é o som do café ficando pronto."</td><td class="pend">Gravar</td></tr>
+      <tr><td class="dia">Dom 20</td><td class="hora"></td><td><span class="tag sto">Stories</span></td><td>Respostas da caixinha + "Adicione o seu: #MeuCaféDaCeia"</td><td></td></tr>
+    </table>
+
+    <h2>Semana 4 <span>Ceia, sorteio e recesso (24 e 25/12)</span></h2>
+    <table>
+      <colgroup><col style="width:16mm"><col style="width:11mm"><col style="width:24mm"><col><col style="width:30mm"></colgroup>
+      <tr><th>Dia</th><th>Hora</th><th>Formato</th><th>Tema · gancho</th><th>Status</th></tr>
+      <tr><td class="dia">Seg 21</td><td class="hora">12h</td><td><span class="tag car">Carrossel</span></td><td>Café da ceia · "O café que vai roubar a cena na ceia" (harmonizações das fichas) + última chamada do sorteio nos stories</td><td>A produzir</td></tr>
+      <tr class="dest"><td class="dia">Ter 22</td><td class="hora">19h</td><td><span class="tag live">Ao vivo</span></td><td><b>Sorteio ao vivo</b> e anúncio do ganhador</td><td></td></tr>
+      <tr><td class="dia">Qua 23</td><td class="hora">19h</td><td><span class="tag car">Carrossel</span></td><td>Quem faz a Ornatto · "Por trás de cada pacote" (mãos e funções, sem rosto)</td><td>A produzir</td></tr>
+      <tr><td class="dia">Qui 24</td><td class="hora"></td><td><span class="tag sto">Stories</span></td><td>Agendado: enquete "Qual café vai na sua ceia?"</td><td></td></tr>
+      <tr><td class="dia">Sex 25</td><td class="hora">10h</td><td><span class="tag car">Carrossel</span></td><td>Agendado: Feliz Natal · "De nós para você" + aviso do recesso</td><td>A produzir</td></tr>
+      <tr><td class="dia">Sáb 26</td><td class="hora">19h</td><td><span class="tag reel">Reel</span></td><td>Respondendo comentários · a melhor pergunta em 30 s</td><td class="pend">Gravar</td></tr>
+      <tr><td class="dia">Dom 27</td><td class="hora"></td><td><span class="tag sto">Stories</span></td><td>Bastidores de 2026</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="rodape"><span>★ maiores apostas de viralização · os reels terão dois ganchos para teste (A e B)</span><span>Ornatto Cafés Especiais · 2/3</span></div>
+</section>
+
+<!-- ================= PÁGINA 2 ================= -->
+<section class="pagina">
+  <header>
+    <div><h1>Sorteio, rotina e <em>pendências</em></h1>
+    <p class="sub">O que vale para o mês inteiro</p></div>
+    <img src="assets/logotipo-verde-dourado.svg">
+  </header>
+
+  <div class="col">
+    <div>
+      <div class="box">
+        <h3>Sorteio do kit do café campeão</h3>
+        <ul>
+          <li><b>Prêmio:</b> caixa, xícara com silk da logo Ornatto e uma lata do Bombom de Licor (F2), campeão do Prêmio Chapada de Minas 2026, categoria Natural. Uma saca dele foi leiloada por R$ 50 mil.</li>
+          <li><b>Para participar:</b> comprar a partir de R$ 30 de 02 a 21/12, seguir a @ornattocafes e postar o café marcando a @ornattocafes. Quem postar nos stories manda o print no direct.</li>
+          <li><b>Regras:</b> uma chance por pessoa. Perfil aberto no dia do sorteio. Um ganhador.</li>
+          <li><b>Sorteio:</b> ao vivo na terça, 22/12, às 19h. O ganhador tem 1 semana para responder. Frete por conta da Ornatto.</li>
+          <li><b>Stories de 02 a 21/12:</b> repost dos participantes e "faltam X dias".</li>
+        </ul>
+      </div>
+      <br>
+      <div class="box">
+        <h3>Datas que movem a programação</h3>
+        <ul>
+          <li><b>Até 10/12:</b> pedidos de latas e kits de Natal (Flor de Laranjeira R$ 79,90 / kit R$ 109,90 · Mel do Engenho R$ 59,90 / kit R$ 89,90).</li>
+          <li><b>14 a 18/12:</b> rota do Alex por cafeterias, com o carrossel B2B publicado na segunda, 14/12.</li>
+          <li><b>14 a 23/12:</b> entregas de Natal.</li>
+          <li><b>24 e 25/12:</b> recesso. Posts e stories ficam agendados.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="box">
+        <h3>Rotina de cada post</h3>
+        <ul>
+          <li>Compartilhar nos stories até 30 minutos depois de publicar.</li>
+          <li>Responder todos os comentários na primeira hora.</li>
+          <li>Fixar no topo do perfil os 3 posts que forem melhor.</li>
+          <li>Reels: corte a cada 1 a 2 segundos, texto na tela, de 7 a 30 segundos, primeira linha da legenda igual ao gancho.</li>
+          <li>Toda segunda-feira, anotar alcance, salvamentos, compartilhamentos, cliques no link e mensagens no WhatsApp de cada post da semana.</li>
+        </ul>
+      </div>
+      <br>
+      <div class="box">
+        <h3>Pendências</h3>
+        <ul>
+          <li class="pend">Fotos das latas: 30/11, até as 10h, para o post das 12h.</li>
+          <li class="pend">Gravação da máquina de seleção: sexta, 27/11.</li>
+          <li class="pend">Foto do kit do sorteio: 02/12.</li>
+          <li class="pend">Autorização do sorteio no Ministério da Fazenda: confirmar com a contabilidade.</li>
+          <li>Gravações dos demais reels: me mandar à medida que forem feitas, para eu editar.</li>
+          <li>Autorização de imagem de quem aparecer nos vídeos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="rodape"><span>Mudanças desta versão: kits até 10/12; "Do cafezal à xícara" antecipado para 04/12; ficha sensorial em 07/12; "Quem já está concorrendo" em 11/12</span><span>Ornatto Cafés Especiais · 3/3</span></div>
+</section>
+
+</body>
+</html>
