@@ -1,0 +1,5 @@
+# Fotos do ensaio (mostram a equipe) e artes geradas: não publicar em repositório público
+instagram/fotos/
+instagram/*/png/
+instagram/*/*.zip
+instagram/*/previa-*.jpg
