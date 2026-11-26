@@ -3,3 +3,4 @@ instagram/fotos/
 instagram/*/png/
 instagram/*/*.zip
 instagram/*/previa-*.jpg
+instagram/*/[0-9]_*.jpg
